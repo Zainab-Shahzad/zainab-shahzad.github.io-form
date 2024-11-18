@@ -46,9 +46,6 @@ const form = document.getElementById("Form");
 const outputContainer = document.createElement("div");
 document.body.appendChild(outputContainer);
 
-// Prevent displaying data on page load
-// displayStoredData();
-
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   const studentName = document.getElementById("studentName").value;
@@ -113,3 +110,4 @@ function displayStoredData() {
     outputContainer.appendChild(studentData);
   });
 }
+window.addEventListener("load", displayStoredData);
