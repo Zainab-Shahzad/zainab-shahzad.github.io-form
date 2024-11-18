@@ -1,0 +1,142 @@
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+  }
+  .form-container {
+    align-self: center;
+      width: 100%;
+      max-width:900px;
+      padding: 10px;
+      position: relative;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1{
+      text-align: center;
+      font-size: 38px;
+    }
+    .form-group,.guardian-field{
+      display: flex;
+      width: 100%;
+      margin-bottom:20px;
+    }
+    label {
+      color: #333;
+      font-weight: bold;
+      margin-top: 15px;
+  }
+    .form-group label{
+      display: block;
+      margin-bottom: 5px;
+    }
+    .input-group,.guardian-input{
+      width: 40%;
+    }
+    .email{
+      width: 90%;
+    }
+    input[type="text"],
+  input[type="email"],input[type="date"] {
+      width: 80%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      transition: border-color 0.3s;
+  }
+  
+  .add-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-button button{
+    height: 50px;
+    width: 50px;
+  }
+    .image-upload-box {
+      position: absolute;
+       right: 2%;
+      width: 200px;
+      height: 200px;
+      border: 2px dashed #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    
+    #uploadButton,.submit,#addGuardianBtn {
+      padding: 10px 20px;
+      background-color: #712cf9;
+      font-weight: bold;
+      color: #ffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+    }
+    
+    #uploadedImage {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .submit{
+     width: 100%;
+     font-size: large;
+     text-align: center;
+    }
+    @media screen and (max-width:850px) {
+      .image-upload-box {
+        width: 150px;
+        height: 150px;
+      }
+    }
+    
+    @media screen and (max-width:700px) {
+      .form-group
+      {
+        display: flex;
+        flex-direction: column;
+        
+      }
+      .radio{
+        flex-direction: row;
+      }
+      .image-upload-box {
+        width: 150px;
+        height: 150px;
+      }
+      #uploadButton{
+        height: 30px;
+        width: 60px;
+        font-weight: lighter;
+        font-size: 14px;
+      }
+      .input-group,.guardian-input{
+        width: 60%;
+      }
+    }
+    @media screen and (max-width:850px) {
+      .image-upload-box {
+        width: 150px;
+        height: 150px;
+      }
+    } @media screen and (max-width:400px) {
+      .image-upload-box {
+        width: 120px;
+        height: 120px;
+      }
+    } 
+  
+  
+  
+  
+  
+    
