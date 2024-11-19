@@ -76,8 +76,6 @@ form.addEventListener("submit", function (event) {
   let students = JSON.parse(localStorage.getItem("students")) || [];
   students.push(newStudent);
   localStorage.setItem("students", JSON.stringify(students));
-
-  // Display data only when the form is submitted
   displayStoredData();
 });
 
